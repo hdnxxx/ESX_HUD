@@ -129,10 +129,10 @@ RegisterNUICallback(
 				["makeup_3"] = makeupcolor,					
 				["makeup_4"] = makeupcolor2,	
 
-				["lipstick_1"] = lipstickup,
-				["lipstick_2"] = lipstickupopacity,
-				["lipstick_3"] = lipstickupcolor,					
-				["lipstick_4"] = lipstickupcolor2,
+				["lipstick_1"] = lipstick,
+				["lipstick_2"] = lipstickopacity,
+				["lipstick_3"] = lipstickcolor,					
+				["lipstick_4"] = lipstickcolor2,
 				
 				-- pelos
 				["eyebrows_1"] = eyebrow,
