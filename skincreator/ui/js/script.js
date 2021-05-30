@@ -31,12 +31,17 @@ function update(save) {
     freckle: $('.tachesrousseur').val(),
     wrinkle: $('.rides').val(),
     wrinkleopacity: $('.rides').val(),
-	
-	makeup: $('.makeup').val(),
-	makeupopacity: $('.makeupopacity').val(),	
-	makeupcolor2: $('.makeupcolor2').val(),	
-	makeupcolor: $('.makeupcolor').val(),			
-	
+
+    makeup: $('.makeup').val(),
+    makeupopacity: $('.makeupopacity').val(),	
+    makeupcolor2: $('.makeupcolor2').val(),	
+    makeupcolor: $('.makeupcolor').val(),			
+    lipstick: $('.lipstick').val(),
+    lipstickopacity: $('.lipstickopacity').val(),	
+    lipstickcolor2: $('.lipstickcolor2').val(),	
+    lipstickcolor: $('.lipstickcolor').val(),
+	  
+	  
 	// pelos
     hair: $('.hair').val(),
     haircolor: $('input[name=haircolor]:checked', '#formSkinCreator').val(),
