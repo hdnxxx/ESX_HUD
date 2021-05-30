@@ -1,3 +1,14 @@
+HIDEN EDIT
+
+i tried to make female options work
+one of the colors makeup_3 or makeup_4 not saving
+
+colors 1-63 inpu
+
+
+
+
+
 # ESX_HUD
 
 There is a new version with a lot of more options : https://github.com/PainedPsyche/cui_character
