@@ -50,6 +50,11 @@ RegisterNUICallback(
 		makeupopacity = tonumber(data.makeupopacity)	
 		makeupcolor = tonumber(data.makeupcolor)
 		makeupcolor2 = tonumber(data.makeupcolor2)	
+
+		lipstick = tonumber(data.lipstick)
+		lipstickopacity = tonumber(data.lipstickopacity)	
+		lipstickcolor = tonumber(data.lipstickcolor)
+		lipstickcolor2 = tonumber(data.lipstickcolor2)
 		
 		-- pelos
 		hair = tonumber(data.hair)
@@ -121,6 +126,11 @@ RegisterNUICallback(
 				["makeup_2"] = makeupopacity,
 				["makeup_3"] = makeupcolor,					
 				["makeup_4"] = makeupcolor2,	
+
+				["lipstick_1"] = lipstick,
+				["lipstick_2"] = lipstickopacity,
+				["lipstick_3"] = lipstickcolor,					
+				["lipstick_4"] = lipstickcolor2,	
 				
 				-- pelos
 				["eyebrows_1"] = eyebrow,
