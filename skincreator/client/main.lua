@@ -45,16 +45,18 @@ RegisterNUICallback(
 		freckle = tonumber(data.freckle)
 		wrinkle = tonumber(data.wrinkle)
 		wrinkleopacity = tonumber(data.wrinkleopacity)
-		
+		--makeup
 		makeup = tonumber(data.makeup)
 		makeupopacity = tonumber(data.makeupopacity)	
 		makeupcolor = tonumber(data.makeupcolor)
 		makeupcolor2 = tonumber(data.makeupcolor2)	
-
+		--lipstick
 		lipstick = tonumber(data.lipstick)
-		lipstickopacity = tonumber(data.lipstickopacity)	
+		lipstickopacity = tonumber(data.lipstickopacity)		
 		lipstickcolor = tonumber(data.lipstickcolor)
 		lipstickcolor2 = tonumber(data.lipstickcolor2)
+		
+		
 		
 		-- pelos
 		hair = tonumber(data.hair)
@@ -127,10 +129,10 @@ RegisterNUICallback(
 				["makeup_3"] = makeupcolor,					
 				["makeup_4"] = makeupcolor2,	
 
-				["lipstick_1"] = lipstick,
-				["lipstick_2"] = lipstickopacity,
-				["lipstick_3"] = lipstickcolor,					
-				["lipstick_4"] = lipstickcolor2,	
+				["lipstick_1"] = lipstickup,
+				["lipstick_2"] = lipstickupopacity,
+				["lipstick_3"] = lipstickupcolor,					
+				["lipstick_4"] = lipstickupcolor2,
 				
 				-- pelos
 				["eyebrows_1"] = eyebrow,
@@ -208,6 +210,9 @@ RegisterNUICallback(
 			
 			SetPedHeadOverlay(playerPed, 4, makeup, makeupopacity * 0.1)			
 			SetPedHeadOverlayColor(playerPed, 4, 2, makeupcolor, makeupcolor2)					
+
+			SetPedHeadOverlay(playerPed, 8, lipstick, lipstickopacity * 0.1)			
+			SetPedHeadOverlayColor(playerPed, 8, 2, lipstickcolor, lipstickcolor2)	
 			
 			
 			--SetPedHeadOverlay(playerPed, 4, 0, 0.0) -- Lipstick
