@@ -2,11 +2,12 @@ HIDEN EDIT
 
 i tried to make female options work
 
-colors 1-63 inpu
+colors 1-63 input
 
-one of the colors makeup_3 or makeup_4 not saving
 
-edit: makeup_3 or makeup_4 saving after test
+
+
+
 
 
 
