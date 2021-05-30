@@ -1,5 +1,5 @@
 var CONFIG = {
-  "lang": "fr",
+  "lang": "en",
   "supportedLangs": ["fr", "en"]
 };
 
@@ -31,13 +31,22 @@ function update(save) {
     freckle: $('.tachesrousseur').val(),
     wrinkle: $('.rides').val(),
     wrinkleopacity: $('.rides').val(),
+	
+	makeup: $('.makeup').val(),
+	makeupopacity: $('.makeupopacity').val(),	
+	makeupcolor2: $('.makeupcolor2').val(),	
+	makeupcolor: $('.makeupcolor').val(),			
+	
+	// pelos
     hair: $('.hair').val(),
     haircolor: $('input[name=haircolor]:checked', '#formSkinCreator').val(),
     eyebrow: $('.sourcils').val(),
-    eyebrowopacity: $('.epaisseursourcils').val(),
+    eyebrowopacity: $('.epaisseursourcils').val(),	
     beard: $('.barbe').val(),
     beardopacity: $('.epaisseurbarbe').val(),
     beardcolor: $('input[name=barbecolor]:checked', '#formSkinCreator').val(),
+	
+	
     // Clothes
     hats: $('.chapeaux .active').attr('data'),
     hats_texture: $('input[class=helmet_2]').val(),
