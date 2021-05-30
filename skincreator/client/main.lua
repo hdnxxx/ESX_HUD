@@ -45,6 +45,13 @@ RegisterNUICallback(
 		freckle = tonumber(data.freckle)
 		wrinkle = tonumber(data.wrinkle)
 		wrinkleopacity = tonumber(data.wrinkleopacity)
+		
+		makeup = tonumber(data.makeup)
+		makeupopacity = tonumber(data.makeupopacity)	
+		makeupcolor = tonumber(data.makeupcolor)
+		makeupcolor2 = tonumber(data.makeupcolor2)	
+		
+		-- pelos
 		hair = tonumber(data.hair)
 		haircolor = tonumber(data.haircolor)
 		eyebrow = tonumber(data.eyebrow)
@@ -52,6 +59,8 @@ RegisterNUICallback(
 		beard = tonumber(data.beard)
 		beardopacity = tonumber(data.beardopacity)
 		beardcolor = tonumber(data.beardcolor)
+		
+		
 		-- Clothes
 		hats = tonumber(data.hats)
 		hats_texture = tonumber(data.hats_texture)
@@ -107,6 +116,13 @@ RegisterNUICallback(
 				["moles_2"] = 1,
 				["age_1"] = wrinkle,
 				["age_2"] = wrinkleopacity,
+				
+				["makeup_1"] = makeup,
+				["makeup_2"] = makeupopacity,
+				["makeup_3"] = makeupcolor,					
+				["makeup_4"] = makeupcolor2,	
+				
+				-- pelos
 				["eyebrows_1"] = eyebrow,
 				["eyebrows_2"] = eyebrowopacity,
 				["beard_1"] = beard,
@@ -179,6 +195,17 @@ RegisterNUICallback(
 			SetPedComponentVariation(playerPed, 2, hair, 0, 2)
 			SetPedHairColor(playerPed, haircolor, haircolor)
 			SetPedHeadOverlay(playerPed, 2, eyebrow, eyebrowopacity * 0.1)
+			
+			SetPedHeadOverlay(playerPed, 4, makeup, makeupopacity * 0.1)			
+			SetPedHeadOverlayColor(playerPed, 4, 2, makeupcolor, makeupcolor2)					
+			
+			
+			--SetPedHeadOverlay(playerPed, 4, 0, 0.0) -- Lipstick
+			--SetPedHeadOverlay(playerPed, 8, 0, 0.0) -- Makeup
+			--SetPedHeadOverlayColor(playerPed, 4, 1, 0, 0) -- Makeup Color
+			--SetPedHeadOverlayColor(playerPed, 8, 1, 0, 0) -- Lipstick Color
+
+			
 			SetPedHeadOverlay(playerPed, 1, beard, beardopacity * 0.1)
 			SetPedHeadOverlayColor(playerPed, 1, 1, beardcolor, beardcolor)
 			SetPedHeadOverlayColor(playerPed, 2, 1, beardcolor, beardcolor)
@@ -334,10 +361,6 @@ RegisterNUICallback(
 
 			-- Unused yet
 			-- These presets will be editable in V2 release
-			SetPedHeadOverlay(playerPed, 4, 0, 0.0) -- Lipstick
-			SetPedHeadOverlay(playerPed, 8, 0, 0.0) -- Makeup
-			SetPedHeadOverlayColor(playerPed, 4, 1, 0, 0) -- Makeup Color
-			SetPedHeadOverlayColor(playerPed, 8, 1, 0, 0) -- Lipstick Color
 			SetPedComponentVariation(playerPed, 1, 0, 0, 2) -- Mask
 		end
 	end
