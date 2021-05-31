@@ -31,25 +31,27 @@ function update(save) {
     freckle: $('.tachesrousseur').val(),
     wrinkle: $('.rides').val(),
     wrinkleopacity: $('.rides').val(),
-
-    makeup: $('.makeup').val(),
-    makeupopacity: $('.makeupopacity').val(),	
-    makeupcolor2: $('.makeupcolor2').val(),	
-    makeupcolor: $('.makeupcolor').val(),			
-    lipstick: $('.lipstick').val(),
-    lipstickopacity: $('.lipstickopacity').val(),	
-    lipstickcolor2: $('.lipstickcolor2').val(),	
-    lipstickcolor: $('.lipstickcolor').val(),
-	  
-	  
+	// makeup
+	makeup: $('.makeup').val(),
+	makeupopacity: $('.makeupopacity').val(),
+	makeupcolor: $('.makeupcolor').val(),	
+	makeupcolor2: $('.makeupcolor2').val(),			
+	// batom
+	lipstick: $('.lipstick').val(),
+	lipstickopacity: $('.lipstickopacity').val(),
+	lipstickcolor: $('.lipstickcolor').val(),		
+	lipstickcolor2: $('.lipstickcolor2').val(),		
 	// pelos
     hair: $('.hair').val(),
-    haircolor: $('input[name=haircolor]:checked', '#formSkinCreator').val(),
+    haircolor: $('.haircolor').val(),
+	haircolor2: $('.haircolor2').val(),
+	
     eyebrow: $('.sourcils').val(),
     eyebrowopacity: $('.epaisseursourcils').val(),	
+	
     beard: $('.barbe').val(),
     beardopacity: $('.epaisseurbarbe').val(),
-    beardcolor: $('input[name=barbecolor]:checked', '#formSkinCreator').val(),
+    beardcolor: $('.barbecolor').val(),
 	
 	
     // Clothes
