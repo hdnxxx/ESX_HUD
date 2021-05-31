@@ -207,19 +207,10 @@ RegisterNUICallback(
 			SetPedComponentVariation(playerPed, 2, hair, 0, 2)
 			SetPedHairColor(playerPed, haircolor, haircolor)
 			SetPedHeadOverlay(playerPed, 2, eyebrow, eyebrowopacity * 0.1)
-			
 			SetPedHeadOverlay(playerPed, 4, makeup, makeupopacity * 0.1)			
 			SetPedHeadOverlayColor(playerPed, 4, 2, makeupcolor, makeupcolor2)					
-
 			SetPedHeadOverlay(playerPed, 8, lipstick, lipstickopacity * 0.1)			
-			SetPedHeadOverlayColor(playerPed, 8, 2, lipstickcolor, lipstickcolor2)	
-			
-			
-			--SetPedHeadOverlay(playerPed, 4, 0, 0.0) -- Lipstick
-			--SetPedHeadOverlay(playerPed, 8, 0, 0.0) -- Makeup
-			--SetPedHeadOverlayColor(playerPed, 4, 1, 0, 0) -- Makeup Color
-			--SetPedHeadOverlayColor(playerPed, 8, 1, 0, 0) -- Lipstick Color
-
+			SetPedHeadOverlayColor(playerPed, 8, 1, lipstickcolor, lipstickcolor2)	
 			
 			SetPedHeadOverlay(playerPed, 1, beard, beardopacity * 0.1)
 			SetPedHeadOverlayColor(playerPed, 1, 1, beardcolor, beardcolor)
