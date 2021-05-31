@@ -1,5 +1,6 @@
 HIDEN EDIT
 
+i translated it to portugal-portuguese
 i tried to make female options work
 
 colors 1-63 input
