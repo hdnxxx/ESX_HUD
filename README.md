@@ -1,9 +1,13 @@
 HIDEN EDIT
 
 i translated it to portugal-portuguese
-i tried to make female options work
 
-colors 1-63 input
+i tried to make female options work and some other costumization
+
+
+limited clothes for city join
+
+colors 1-63 input (to change)
 
 
 
