@@ -35,37 +35,38 @@ RegisterNUICallback(
 		local playerPed = PlayerPedId()
 		v = data.value
 		-- Face
-		dad = tonumber(data.dad)
-		mum = tonumber(data.mum)
-		gender = tonumber(data.gender)
-		skin = tonumber(data.skin)
-		eyecolor = tonumber(data.eyecolor)
-		acne = tonumber(data.acne)
-		skinproblem = tonumber(data.skinproblem)
-		freckle = tonumber(data.freckle)
-		wrinkle = tonumber(data.wrinkle)
-		wrinkleopacity = tonumber(data.wrinkleopacity)
+		dad 			= tonumber(data.dad)
+		mum 			= tonumber(data.mum)
+		gender 			= tonumber(data.gender)
+		skin 			= tonumber(data.skin)
+		eyecolor		= tonumber(data.eyecolor)
+		acne 			= tonumber(data.acne)
+		skinproblem 	= tonumber(data.skinproblem)
+		freckle 		= tonumber(data.freckle)
+		wrinkle 		= tonumber(data.wrinkle)
+		wrinkleopacity 	= tonumber(data.wrinkleopacity)
+		
 		--makeup
-		makeup = tonumber(data.makeup)
-		makeupopacity = tonumber(data.makeupopacity)	
-		makeupcolor = tonumber(data.makeupcolor)
-		makeupcolor2 = tonumber(data.makeupcolor2)	
+		makeup 			= tonumber(data.makeup)
+		makeupopacity 	= tonumber(data.makeupopacity)	
+		makeupcolor 	= tonumber(data.makeupcolor)
+		makeupcolor2 	= tonumber(data.makeupcolor2)	
 		--lipstick
-		lipstick = tonumber(data.lipstick)
+		lipstick 		= tonumber(data.lipstick)
 		lipstickopacity = tonumber(data.lipstickopacity)		
-		lipstickcolor = tonumber(data.lipstickcolor)
-		lipstickcolor2 = tonumber(data.lipstickcolor2)
-		
-		
+		lipstickcolor 	= tonumber(data.lipstickcolor)
+		lipstickcolor2 	= tonumber(data.lipstickcolor2)
 		
 		-- pelos
-		hair = tonumber(data.hair)
-		haircolor = tonumber(data.haircolor)
-		eyebrow = tonumber(data.eyebrow)
-		eyebrowopacity = tonumber(data.eyebrowopacity)
-		beard = tonumber(data.beard)
-		beardopacity = tonumber(data.beardopacity)
-		beardcolor = tonumber(data.beardcolor)
+		hair 			= tonumber(data.hair)
+		haircolor 		= tonumber(data.haircolor)
+		haircolor2 		= tonumber(data.haircolor2)	
+		
+		eyebrow 		= tonumber(data.eyebrow)
+		eyebrowopacity	= tonumber(data.eyebrowopacity)
+		beard 			= tonumber(data.beard)
+		beardopacity 	= tonumber(data.beardopacity)
+		beardcolor 		= tonumber(data.beardcolor)
 		
 		
 		-- Clothes
@@ -144,7 +145,8 @@ RegisterNUICallback(
 				["hair_1"] = hair,
 				["hair_2"] = 0,
 				["hair_color_1"] = haircolor,
-				["hair_color_2"] = haircolor,
+				["hair_color_2"] = haircolor2,
+				
 				["arms"] = hand,
 				["arms_2"] = handtext,
 				["pants_1"] = leg,
@@ -205,12 +207,23 @@ RegisterNUICallback(
 
 			SetPedHeadOverlay(playerPed, 3, wrinkle, wrinkleopacity * 0.1)
 			SetPedComponentVariation(playerPed, 2, hair, 0, 2)
-			SetPedHairColor(playerPed, haircolor, haircolor)
+			
+			SetPedHairColor(playerPed, haircolor, haircolor2)
+			
 			SetPedHeadOverlay(playerPed, 2, eyebrow, eyebrowopacity * 0.1)
+			
 			SetPedHeadOverlay(playerPed, 4, makeup, makeupopacity * 0.1)			
 			SetPedHeadOverlayColor(playerPed, 4, 2, makeupcolor, makeupcolor2)					
+
 			SetPedHeadOverlay(playerPed, 8, lipstick, lipstickopacity * 0.1)			
 			SetPedHeadOverlayColor(playerPed, 8, 1, lipstickcolor, lipstickcolor2)	
+			
+			
+			--SetPedHeadOverlay(playerPed, 4, 0, 0.0) -- Lipstick
+			--SetPedHeadOverlay(playerPed, 8, 0, 0.0) -- Makeup
+			--SetPedHeadOverlayColor(playerPed, 4, 1, 0, 0) -- Makeup Color
+			--SetPedHeadOverlayColor(playerPed, 8, 1, 0, 0) -- Lipstick Color
+
 			
 			SetPedHeadOverlay(playerPed, 1, beard, beardopacity * 0.1)
 			SetPedHeadOverlayColor(playerPed, 1, 1, beardcolor, beardcolor)
